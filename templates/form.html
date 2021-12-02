@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Ping Exporter</title>
+    <style>
+        label {
+            display: inline-block;
+            width: auto;
+        }
+
+        form label {
+            margin: 10px;
+        }
+
+        form input {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ping Exporter</h1>
+    <form action="/metrics">
+        <label>src_addr:</label> <input type="text" name="src_addr" placeholder="src_addr" value=""><br>
+        <label>dest_addr:</label> <input type="text" name="target" placeholder="dest_addr" value="8.8.8.8"><br>
+        <label>count:</label> <input type="number" name="count" placeholder="number of packet" value='8'><br>
+        <label>protocol_version:</label> <input type="text" name="protocol_version" placeholder="ipv4 or ipv6" value="ipv4"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
